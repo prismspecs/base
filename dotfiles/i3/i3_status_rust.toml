@@ -1,0 +1,65 @@
+theme = "native"
+[icons]
+name = "awesome"
+[icons.overrides]
+cpu = " "
+memory_mem = " "
+
+[[block]]
+block = "music"
+player = "spotify"
+buttons = ["play", "next"]
+
+[[block]]
+block = "custom"
+command="~/.config/i3/vpn.sh status"
+on_click="~/.config/i3/vpn.sh toggle"
+#text = "VPN"
+#command_state = "~/.config/i3/vpn.sh status"
+#command_on = "~/.config/i3/vpn.sh toggle"
+#command_off = "~/.config/i3/vpn.sh toggle"
+interval = 5
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = ""
+info_type = "available"
+unit = "GB"
+interval = 100
+format = "{icon}{used}/{total} {unit} ({available}{unit} free)"
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mug}/{MTg}"
+icons = true
+clickable = true
+interval = 5
+warning_mem = 80
+critical_mem = 95
+
+#[[block]]
+#block = "xrandr"
+#interval = 2
+#icons = false
+#resolution = true
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization}%"
+
+#[[block]]
+#block = "load"
+#interval = 1
+#format = "{1m}"
+
+[[block]]
+block = "sound"
+
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d-%m %R"
