@@ -14,10 +14,6 @@ buttons = ["play", "next"]
 block = "custom"
 command="~/.config/i3/vpn.sh status"
 on_click="~/.config/i3/vpn.sh toggle"
-#text = "VPN"
-#command_state = "~/.config/i3/vpn.sh status"
-#command_on = "~/.config/i3/vpn.sh toggle"
-#command_off = "~/.config/i3/vpn.sh toggle"
 interval = 5
 
 [[block]]
@@ -57,7 +53,6 @@ format = "{utilization}%"
 
 [[block]]
 block = "sound"
-
 
 [[block]]
 block = "time"
